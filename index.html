@@ -4,9 +4,75 @@
         <meta charset="UTF-8" />
         <META NAME="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Homework 1</title>
+        <title>Homework 2</title>
+        <style>
+            body {
+                font-family: Calibri, sans-serif;
+            }
+
+            hr {
+                border: none;
+                height: 3px;
+                color:darkseagreen;
+                background-color:darkseagreen;
+            }
+
+            #rcorners {
+                border-radius: 25px;
+                border: 2px solid;
+                border-color:gray;
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .div1 {
+                border-style: solid;
+                border-width: 3px;
+                border-color: red;
+                padding: 5px;
+                width: 450px;
+            }
+            
+            .parent {
+                display: flex;
+                flex-flow:row wrap;
+                justify-content: center;
+            }
+        </style>
     </head>
-    <body>
-        <h1>Hello from Bryan Quach</h1>
+    <body width="900px">
+        <header><center><h2>Quach, Bryan</h2></center></header>
+        <hr width="50%">
+        <p><center><i>Welcome to IS445 Homework 2</i></center></p>
+        <center><img src="images/cat.jpg" alt="Image of a Cat" /></center><br>
+        <div class="parent">
+            <div class="div1">
+                <center><span>About Me</span></center>
+                <p><b><u><i>Education</i></u></b></p>
+                <p>2019, Bachelor of Information Systems, CSULB</p>
+                <p><b><u><i>Skills</i></u></b></p>
+                <ol type="1">
+                    <li>Web Programming: CSS, HTML</li>
+                    <li>Python, C++, Java</li>
+                </ol>
+                <p><b><u><i>Expectation for this course</i></u></b></p>
+                <p>I would like to learn more about web development and refine what I learned prior to this class.</p>
+            </div>
+            <div class="div1">
+                <center><span>Contact Me</span></center>
+                <div id="rcorners">
+                    <form action="mailto:bryan.quach@csulb.edu" method="post" enctype="text/plain">
+                        Name:<br>
+                        <input type="text" name="name"><br>
+                        E-mail:<br>
+                        <input type="text" name="mail"><br>
+                        Message:<br>
+                        <textarea rows="5" cols="50" name="message">
+                        </textarea><br>
+                        <center><input type="submit" value="Send your Message"></center>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
